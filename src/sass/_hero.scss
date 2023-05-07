@@ -1,0 +1,157 @@
+.hero {
+  height: 380px;
+  max-width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-position: 0 0, -50px 0;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    height: 372px;
+    max-width: 768px;
+
+    background-position: 110px 0px, 275px 0px;
+    background-size: contain, contain;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 660px;
+    max-width: 1280px;
+
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-position: 0px -60px, 275px -60px;
+  }
+}
+
+.hero-container {
+  height: 100%;
+
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280;
+  }
+}
+
+.hero-decription {
+  width: 250px;
+  height: 100%;
+  padding-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+    width: 350px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 464px;
+  }
+}
+
+.hero-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: var(--white-txt-color);
+
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 75px;
+  }
+}
+
+.hero-vote {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 16px;
+  }
+}
+
+.hero-text {
+  width: 166px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  margin-top: 8px;
+
+  color: var(--seconday-txt-color);
+
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 19px;
+
+    margin-top: 16px;
+  }
+}
+
+.hero-text-API {
+  margin-top: 16px;
+  max-height: 160px;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 28px;
+  }
+}
+
+.hero-text-more {
+  display: none;
+
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: inline;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.hero-btn {
+  margin-top: 16px;
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}

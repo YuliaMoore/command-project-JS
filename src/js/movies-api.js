@@ -39,14 +39,19 @@ export class MoviesAPI {
   // Три функції: тренди дня, тижня і пошуковий запит.
 
   async getTrendMoviesDay() {
-    try {
-      const response = await axios.get(
-        `${this.#BASE_URL}/3/trending/movie/day?api_key=${this.#API_KEY}`
-      );
-      return response.data;
-    } catch (error) {
-      throw new Error(error.response.status);
-    }
+    // try {
+    //   const response = await axios.get(
+    //     `${this.#BASE_URL}/3/trending/movie/day?api_key=${this.#API_KEY}`
+    //   );
+    //   return response.data;
+    // } catch (error) {
+    //   throw new Error(error.response.status);
+    // }
+
+    const response = await axios.get(
+      `${this.#BASE_URL}/3/trending/movie/day?api_key=${this.#API_KEY}`
+    );
+    return response.data;
   }
 
   async getTrendMoviesWeek() {
